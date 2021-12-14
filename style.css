@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    height: 99%;
+    background-image: url('images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.row{
+	width: 100%; 
+	margin: 0px;
+}
+
+.container{
+	height: 50vh;
+	width: 100%;
+	
+}
+
+.navbar-brand{
+	padding-left: 10px;
+	font-size: 1.5rem;
+	font-weightrem: bold;
+}
+
+
+#navbarNav{
+	padding-right: 10px;
+}
+
+.my-info{ 
+}
+
+.my-info .col-md-6{
+	height: 88vh;
+}
+
+.name-portfolio h1, h2, h3{
+	color: #ffff;  
+	margin: 5px
+}
+
+.name-portfolio{
+	background-color: rgba(59, 84, 80, 0.6); 
+	width: 500px;
+	height: 200px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.col-md-6 img{
+	border-radius: 50%;
+	position: relative;
+	height: 370px;
+	width: 370px;  
+	border: 5px solid #C3965D;
+	padding: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	margin-top: 50px;
+}
+
+.image-portfolio .col-12{
+	margin-top: 10px;
+}
+
+
+.button-hire{
+	margin-top: 20px;
+}
+
+.button-hire a{
+	text-align: center;
+	padding: 5px;
+	align-items: center;
+	box-sizing: border-box;
+	width: 165px;
+	height: 50px;
+	background-color: #AA8461;
+	border: 2px solid #ffff;
+	color: #ffff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.button-hire a:hover{
+	border: 2px solid #AA8461;
+	background-color: #ffff;
+	color: #AA8461;
+}
+
+
+.about-me{ 
+	position: relative;
+}
+
+.about-me .col-md-5, .col-md-7{
+	height: 100vh;
+}
+
+.about-me .about-img{
+	height: 500px;
+	width: 380px;
+}
+
+.about-me .my-description{
+	width: 90%;
+	height: 399px;
+	background-color: #E4E4C6;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.about-me .skill-icon i{
+	box-sizing: border-box;
+	font-size: 2rem;
+	margin-top: 5px;
+	margin-right: 10px;
+	color: #475F55;
+}
+
+ .project{ 
+ 	position: relative;
+
+	height: 100vh;
+	
+
+ }
+
+
+
+.carousel{
+	width: 70%; 
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-me{ 
+	position: relative;
+}
+
+.contact-me .col-md-5, .col-md-7{
+	height: 100vh;
+}
+
+
+.contact-me .my-description{
+	width: 90%;
+	height: 399px;
+	background-color: #E4E4C6;
+	padding: 20px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-me .skill-icon i{
+	box-sizing: border-box;
+	font-size: 2rem;
+	margin-top: 5px;
+	margin-right: 10px;
+	color: #475F55;
+}
+
+ 

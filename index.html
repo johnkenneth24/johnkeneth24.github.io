@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href=" style.css">
+    <link rel="stylesheet" type="text/css" href="files/fontawesome/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/Chart.min.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
+    <title>KEN PORTFOLIO</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="m-2 sticky-top navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">K E N.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="row">
+                <div class="col-12 my-info d-flex flex-wrap justify-content-center">
+                    <div class="col-md-6 align-content-center align-items-center justify-content-center d-flex">
+                        <div class="name-portfolio d-flex justify-content-center align-items-center">
+                            <div class="my-name">
+                                <h2 class="text-center fw-lighter display-6">Hi, I'm</h2>
+                                <h1 class="text-center fw-bold">JOHN KENNETH GERERO</h1>
+                                <h3 class="text-center fw-lighter fst-italic">A Front end Developer</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-content-center justify-content-center d-flex">
+                        <div class="image-portfolio">
+                            <img class="myimage" src="images/ken.jpg">
+                            <div class="d-flex button-hire d-flex justify-content-between">
+                                <div class="d-flex align-content-center cv">
+                                    <a class="nav-link" href="files/resume.pdf" download><p class="m-0">LOOK FOR MY CV</p></a>
+                                    
+                                </div>
+                                <div class="hire">
+                                    <a class="nav-link" href="#contact"><p class="m-0">HIRE ME</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-center about-me">
+                    <div class="col-md-7 align-content-center align-items-center justify-content-center d-flex">
+                        <div class="my-description d-flex justify-content-center align-items-center">
+                            <div class="description">
+                                <h1>About Me</h1>
+                                <br>
+                                <p class="text-normal">
+                                    Hello, my name is John Kenneth Gerero, and I'm 22 years old.
+                                    I live in Bulan, Sorsogon, Philippines. At Sorsogon State University - Bulan Campus,
+                                    I studied Bachelor of Science in Information Technology.
+                                    I have sufficient talent and ambition to pursue a career as a front end developer.
+                                    I'm also quite enthusiastic about this sector, and I'm always working to improve my web application development abilities.
+                                </p>
+                                <br>
+                                <div class="skill-icon d-flex">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                    <i class="fab fa-react"></i>
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 align-content-center align-items-center justify-content-center d-flex">
+                        <div class="d-flex justify-content-center">
+                            <canvas id="myChart" style="position: relative; height:60vh; width: 40vw; padding: 5px; background: #EAEED1; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; "></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="project">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-center project"> 
+                    <div class="my-project d-flex align-items-center col-md-12">
+                      <center>
+                          <h2 class="mb-4 mt-4">PROJECT</h2>
+                          <div id="carouselExampleCaptions" class="carousel border-warning slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="images/noteapp.png"  class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>NOTE APP</h5>
+                                  <a href="https://github.com/johnkenneth24/ITST4_Activity_Note_Apps.git">https://github.com/johnkenneth24/ITST4_Activity_Note_Apps.git</a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/weatherapp.png"  class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>WEATHER APP</h5>
+                                  <a href="https://github.com/DJmistMAGO/WeatherApp_AdvancedWeb.git">https://github.com/DJmistMAGO/WeatherApp_AdvancedWeb.git</a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/noteapp.png"  class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>CHAT APP</h5>
+                                  <a href="https://github.com/johnkenneth24/chat_app.git">https://github.com/johnkenneth24/chat_app.git</a>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/noteapp.png"  class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>CAPSTONE PROJECT</h5>
+                                  <a href="https://github.com/mgpabilando/capstone_project.git">https://github.com/mgpabilando/capstone_project.git</a>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                        </center>
+                    </div>
+                  </div>
+                </div> 
+        </section>
+
+
+        <section id="contact">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-center contact-me">
+                    <div class="col-md-7 align-content-center align-items-center justify-content-center d-flex">
+                        <div class="my-description d-flex">
+                            <div class="description">
+                                <h1>Contact Information</h1>
+
+                                 <h4 class="fw-lighter">For more inquiries and collaboration here is my contact information.</h4>
+                                 <span class="fw-bold">Email:</span><span> jkenneth.gerero@gmail.com</span><br>
+                                 <span class="fw-bold">Tel. No.:</span><span> 056-311-5879</span>
+                                 <h1 class="mt-5">Social Links</h1>
+                                <div class="skill-icon d-flex">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter-square"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fab fa-tiktok"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 align-content-center align-items-center justify-content-center d-flex">
+                        <div class="d-flex justify-content-center">
+                          <div class="my-description">
+                            <form class="row g-3">
+                              <h6 class="text-normal">Just contact me by sending message here.</h6>
+                            <div class="col-12">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">First Name</label>
+                              <input type="name" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputAddress" class="form-label">Last Name</label>
+                              <input type="name" class="form-control" id="inputAddress">
+                            </div>
+                            <label for="Textarea" class="form-label">Textarea</label>
+                            <textarea class="form-control" id="Textarea" required></textarea>
+                            <div class="col-12 d-flex justify-content-end">
+                              <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> SEND</button>
+                            </div>
+                          </form>
+                        </div>
+                        </div>
+                    </div>
+
+                  </div>
+                </div>
+        </section>
+
+
+         
+    </div>
+
+
+
+    <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: "bar",
+
+        // The data for our dataset
+        data: {
+            labels: ["CSS", "HTML", "JavaScript", "React JS", "Laravel"],
+            datasets: [{
+                label: "My Skill",
+                backgroundColor: "#C3965D",
+                data: [75, 80, 50, 60, 50],
+
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            maintainAspectRatio: true,
+        }
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
